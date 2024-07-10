@@ -104,6 +104,19 @@ Credit: plugin inspired by
 
 4. If you additionally want syntax highlighting on your snakemake files, install snakemake's [syntax highlighter](https://github.com/snakemake/snakemake/tree/master/misc/vim)!
 
+## Emacs
+
+1. Install [Apheleia](https://github.com/radian-software/apheleia/)
+
+2. That's it! Configure Apheleia to run globally and on save if you'd like.
+
+In [Doom Emacs](https://github.com/doomemacs/doomemacs)
+
+```elisp title=init.el
+       :editor
+       (format +onsave)
+```
+
 ### Troubleshooting
 
 Under certain circumstances, import errors can occur when using a virtual environment due to _Black_ dependency imports. See the [_Black_ Vim integration docs](https://black.readthedocs.io/en/stable/editor_integration.html#vim) for more details and a potential solution.
